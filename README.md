@@ -1,5 +1,4 @@
 # UDP_HR_Analysis_Project_2019
-UDP HR Analysis Project (Summer 2019)
 
 Purpose:
 Career planning and progression mapping (task, skill, education and experience matching) for employees and job applicants at the City of Tulsa (CoT).
