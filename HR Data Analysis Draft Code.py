@@ -33,7 +33,6 @@ list_folders = print(os.listdir(path))
 job_file = []
 def list_files(path, extension):
     for (dirpath, dirname, filename) in os.walk(path):
-        #job_file.append([file for file in filename if file.endswith(extension)])
         job_file.append([os.path.join(dirpath, file) for file in filename if file.endswith(extension)]) 
 
 
@@ -42,7 +41,7 @@ def list_files(path, extension):
 
 
 list_files(path, '.docx')
-# list_files(path, '.doc') 
+# list_files(path, '.doc') - throws an error message ?
 # many of the document files are '*.doc' format instead of '*.docx', but docx module won't read '.doc' 
 
 job_file = [file for sublist in job_file for file in sublist]
